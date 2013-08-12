@@ -7,4 +7,7 @@ namespace Stripe
 		[JsonProperty("customer")]
 		public string CustomerId { get; set; }
 	}
+    public class StripeBankAccountTokenCreateOptions : BankAccountOptions
+    {
+    }
 }

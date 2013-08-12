@@ -2,7 +2,17 @@
 {
 	internal static class Urls
 	{
-		public static string Invoices
+        public static string Transfers
+        {
+            get { return BaseUrl + "/transfers"; }
+        }
+
+        public static string Recipients
+        {
+            get { return BaseUrl + "/recipients"; }
+        }
+        
+        public static string Invoices
 		{
 			get { return BaseUrl + "/invoices"; }
 		}
@@ -31,7 +41,7 @@
 		{
 			get { return BaseUrl + "/plans"; }
 		}
-
+		
 		public static string Customers
 		{
 			get { return BaseUrl + "/customers"; }

@@ -21,7 +21,16 @@ namespace Stripe
 			return Mapper<StripeToken>.MapFromJson(response);
 		}
 
-		public virtual StripeToken Get(string tokenId)
+        public virtual StripeToken CreateBank(StripeBankAccountTokenCreateOptions createOptions)
+        {
+            var url = ParameterBuilder.ApplyAllParameters(createOptions, Urls.Tokens);
+
+            var response = Requestor.PostString(url, ApiKey);
+
+            return Mapper<StripeToken>.MapFromJson(response);
+        }
+        
+        public virtual StripeToken Get(string tokenId)
 		{
 			var url = string.Format("{0}/{1}", Urls.Tokens, tokenId);
 

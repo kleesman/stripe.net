@@ -23,7 +23,13 @@ namespace Stripe
 		[JsonProperty("description")]
 		public string Description { get; set; }
 
-		[JsonProperty("other_transfers")]
+        [JsonProperty("livemode")]
+        public bool? LiveMode { get; set; }
+
+        [JsonProperty("recipient")]
+        public string Recipient { get; set; }
+        
+        [JsonProperty("other_transfers")]
 		public List<string> OtherTransfers { get; set; }
 
 		[JsonProperty("summary")]
