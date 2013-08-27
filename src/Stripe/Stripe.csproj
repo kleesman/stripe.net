@@ -50,6 +50,7 @@
     <Compile Include="..\SharedAssemblyInfo.cs">
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
+    <Compile Include="Entities\StripeTransfer.cs" />
     <Compile Include="Entities\StripeBank.cs" />
     <Compile Include="Entities\StripeCardList.cs" />
     <Compile Include="Entities\StripeDispute.cs" />
@@ -71,7 +72,6 @@
     <Compile Include="Entities\StripeSubscription.cs" />
     <Compile Include="Entities\StripeCoupon.cs" />
     <Compile Include="Entities\StripeDiscount.cs" />
-    <Compile Include="Entities\StripeTransfer.cs" />
     <Compile Include="Entities\StripeTransferSummary.cs" />
     <Compile Include="Infrastructure\StripeConfiguration.cs" />
     <Compile Include="Infrastructure\StripeDateTimeConverter.cs" />
@@ -116,6 +116,8 @@
     <Compile Include="Infrastructure\Urls.cs" />
     <Compile Include="Infrastructure\ParameterBuilder.cs" />
     <Compile Include="Infrastructure\Requestor.cs" />
+    <Compile Include="Services\Transactions\StripeTransactionService.cs" />
+    <Compile Include="Services\Transactions\StripeTransactionCreateOptions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
