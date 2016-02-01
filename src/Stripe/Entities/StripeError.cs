@@ -13,6 +13,9 @@ namespace Stripe
 		[JsonProperty("code")]
 		public string Code { get; set; }
 
+    [JsonProperty("decline_code")]
+    public string DeclineCode { get; set; }
+
 		[JsonProperty("param")]
 		public string Parameter { get; set; }
 
