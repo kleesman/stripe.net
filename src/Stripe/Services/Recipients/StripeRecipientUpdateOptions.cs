@@ -14,6 +14,9 @@ namespace Stripe
         [JsonProperty("name")]
         public string Name { get; set; }
 
+        [JsonProperty("type")]
+        public string Type { get; set; }
+
         [JsonProperty("tax_id")]
         public string TaxId { get; set; }
 
